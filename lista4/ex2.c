@@ -9,7 +9,9 @@ int main(void){
     
     //scanf("%d", &n);
 
-    int vet[4]
+    n=5;
+
+    int vet[5] = {5,5,4,8,1};
 
     //for(i = 0; i < n; i++)
     //   scanf("%d", &vet[i]);
@@ -32,9 +34,12 @@ int main(void){
             printf("%d : %d vezes; ",vet[i-1], cont);
             cont=0;
             atual = vet[i];
+            continue;
         }
         i++;
     }
+
+    printf("%d : %d vezes; ",vet[i-1], cont);
       
   return 0;
 }

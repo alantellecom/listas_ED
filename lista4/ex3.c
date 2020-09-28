@@ -29,7 +29,7 @@ typedef struct prod{
 
 int cmp(const void *x, const void *y);
 
-void ordena1 (TPROD **prat, int n);
+//void ordena1 (TPROD **prat, int n);
 
 int main(void){
   int n;
@@ -37,7 +37,7 @@ int main(void){
   if(n > 0){
     TPROD vet[n];
     int i;
-    for(i = 0; i < n; i++) scanf("%d%f%d", &vet[i].cod, &vet[i].preco, &vet[i].valid->ano);
+    for(i = 0; i < n; i++) scanf("%d%f%d", &vet[i].cod, &vet[i].preco, &vet[i].valid->ano);// Erro desconhecido....
  
     printf("Depois da ordenacao...\n");
     qsort(vet, n, sizeof(TPROD), cmp);
